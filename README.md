@@ -1,4 +1,6 @@
 # rest_api_contact
 
-1)git clone
-2)npm install
+after git clone
+<br>
+To install all package do
+npm install 
