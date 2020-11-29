@@ -41,6 +41,10 @@
     <div class="col-3">
       Phone
     </div>
+
+    <div class="col-3">
+      Delete
+    </div>
   </div>
   <div class="row" *ngFor="let p of contacts">
     <div class="col-3">
@@ -51,6 +55,9 @@
     </div>
     <div class="col-3">
       {{p.phone}}
+    </div>
+    <div class="col-3">
+      <button type="button" (click)="delete(p._id)" class="btn btn-outline-danger">Danger</button>
     </div>
   </div>
 </div>

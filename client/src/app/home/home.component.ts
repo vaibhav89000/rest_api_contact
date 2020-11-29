@@ -46,4 +46,17 @@ export class HomeComponent implements OnInit {
     })
   }
 
+  delete(id){
+    console.log(id);
+
+    this.service.deleteConatact(id)
+    .then((res)=>{
+      //console.log('success');
+      this.fetch();
+    })
+    .catch(err=>{
+      //console.log('err',err);
+    })
+  }
+
 }

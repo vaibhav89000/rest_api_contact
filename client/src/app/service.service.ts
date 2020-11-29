@@ -24,4 +24,8 @@ export class ServiceService {
   getConatct(){
     return this.http.get('http://localhost:3000/api/contacts');
   }
+
+  deleteConatact(id){
+    return this.http.delete('http://localhost:3000/api/contact/'+id).toPromise();
+  }
 }
